@@ -1,0 +1,27 @@
+{
+    "name": "larareko/aws-rekognition",
+    "description": "A Laravel package for the AWS Rekognition",
+    "require-dev": {
+        "phpunit/phpunit": "~5.7",
+        "orchestra/testbench": "~3.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alejandro",
+            "email": "acarste@okstate.edu"
+        },
+        {
+            "name": "Kaushik Subramaniam Gnanaskandan",
+            "email": "kaushik.subman@gmail.com"
+        }
+    ],
+    "require": {
+        "aws/aws-sdk-php":"~3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Larareko\\Rekognition\\": "src/"
+        }
+    }
+}
