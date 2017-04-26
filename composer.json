@@ -16,6 +16,7 @@
             "email": "kaushik.subman@gmail.com"
         }
     ],
+    "minimum-stability": "dev",
     "require": {
         "aws/aws-sdk-php":"~3.0"
     },
