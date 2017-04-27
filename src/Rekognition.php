@@ -467,6 +467,32 @@ class Rekognition
         
         if(!is_null($path)) $body = $this->encodeImage($path);
         
-        return $this->s3->putObject(['Body' => $body, 'Bucket' => $bucket, 'Key' => $key]);
+        return $this->s3->putObject(['ACL' => 'public-read', 'Body' => $body, 'Bucket' => $bucket, 'Key' => $key]);
+    }
+    
+    /**
+     * Delete images from S3
+     * 
+     * @param string    $bucket
+     * @param array     $keys
+     * @return mixed
+     */
+    public function deleteS3Objects($bucket, $keys)
+    {
+        $this->setS3();
+        
+        $objects = [];
+        
+        foreach($keys as $key)
+        {
+            $objects[] = ['Key' => $key];
+        }
+        
+        return $this->s3->deleteObjects([
+            'Bucket' => $bucket,
+            'Delete' =>[
+                'Objects' => $objects
+            ]
+        ]);
     }
 }
