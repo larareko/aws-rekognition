@@ -1,6 +1,6 @@
 # larareko/aws-rekognition
 
-A Laravel package/facade for the Rekognition API PHP SDK. Check out our [demo](http://lowcost-env.debmcyriik.us-west-2.elasticbeanstalk.com/).
+A Laravel package/facade for the Rekognition API PHP SDK. Check out our <b>[demo](http://lowcost-env.debmcyriik.us-west-2.elasticbeanstalk.com/)</b>.
 
 This repository implements a simple Service Provider of the AWS Rekognition client, and makes it easily accessible via a Facade in Laravel >= 5. 
 
