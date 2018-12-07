@@ -152,7 +152,7 @@ class Rekognition
     {
         return $this->client->deleteFaces([
             'CollectionId' => $collectionId,
-            'FacesIds' => $faceIds
+            'FaceIds' => $faceIds
         ]);
     }
     
